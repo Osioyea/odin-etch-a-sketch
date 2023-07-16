@@ -1,0 +1,14 @@
+.container{
+  background-color: #E0E0E0;
+  border: 5px;
+  border-style: solid;
+  width: 720px;
+  height: 720px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: start;
+}
+
+.tile{
+  background-color: #A0A0A0;
+}
