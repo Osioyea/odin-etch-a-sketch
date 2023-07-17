@@ -18,7 +18,24 @@ function killGrid(){
   }
 }
 
+function resetGrid(size){
+  killGrid();
+  setGrid(size);
+}
+
+function sizeSelector(){
+  let size = prompt("Select a new grid size");
+  size = Number(size);
+  console.log(typeof size);
+  console.log(size);
+  if(size > 0 && size <101){
+    resetGrid(size);
+  }
+}
+
 const container = document.querySelector('.container');
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', sizeSelector);
 let gridSize = 16;
 
 setGrid(gridSize);
