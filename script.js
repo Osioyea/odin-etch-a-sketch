@@ -24,10 +24,8 @@ function resetGrid(size){
 }
 
 function sizeSelector(){
-  let size = prompt("Select a new grid size");
+  let size = prompt("Select a new grid size", "16");
   size = Number(size);
-  console.log(typeof size);
-  console.log(size);
   if(size > 0 && size <101){
     resetGrid(size);
   }
